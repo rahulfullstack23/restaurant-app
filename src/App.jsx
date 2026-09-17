@@ -1,13 +1,17 @@
-import React from 'react'
-import "./App.css";
-import Header from './components/Header.jsx';
+import { Fragment } from 'react';
 
-const App = () => {
+import Header from './components/Layout/Header';
+import Meals from './components/Meals/Meals';
+
+function App() {
   return (
-    <div>
+    <Fragment>
       <Header />
-    </div>
-  )
+      <main>
+        <Meals />
+      </main>
+    </Fragment>
+  );
 }
 
-export default App
+export default App;
